@@ -130,31 +130,34 @@ A sample configuration looks like:
 As a last step towards testing is activating your custom action and actually performing account linking.
 To do so you will need any android device where you are signed-in with the same Google account which you used to create the custom action project.
 
- 1. Open your Google Home app and navigate to the profile (bottom right icon) and click on the `Set up or add` area
- ![Google Smart Home Profile](./img/gsm-01-profile.jpg "Google Smart Home Profile")
+### Open your Google Home app and navigate to the profile (bottom right icon) and click on the `Set up or add` area
+
+![Google Smart Home Profile](./img/gsm-01-profile.jpg "Google Smart Home Profile")
 
 
- 2. Chose the `Setup device` option
- ![Google Smart Home Profile](./img/gsm-02-setup.jpg "Setup device")
+### Chose the `Setup device` option
+
+![Google Smart Home Profile](./img/gsm-02-setup.jpg "Setup device")
+
+### Next select the `Works with Google` option
+![Google Smart Home Profile](./img/gsm-03-workswith.jpg "Choose works with google")
 
 
- 3. Next select the `Works with Google` option
- ![Google Smart Home Profile](./img/gsm-03-workswith.jpg "Choose works with google")
+### On the presented list of all `Works with Google` accounts look for a black and white cloud icon with description similar to `[test] Your Project Name` and select it
+
+![Google Smart Home Profile](./img/gsm-04-test.jpg "Look for [test] project name")
 
 
- 4. On the presented list of all `Works with Google` accounts look for a black and white cloud icon 
- with description similar to `[test] Your Project Name` and select it
- ![Google Smart Home Profile](./img/gsm-04-test.jpg "Look for [test] project name")
+### At this moment you must have been redirected to your Azure AD B2C flow. This can be seen on the very top of your screen. The sign-up / sign-in options that you configured in your user flow will be displayed 
+
+![Azure AD B2C flow](./img/gsm-05-b2clogin.jpg "Azure AD B2C sign-up or sign-in flow")
 
 
- 5. At this moment you must have been redirected to your Azure AD B2C flow. This can be seen on the very top of your screen. The sign-up / sign-in options that you configured in your user flow will be displayed 
- ![Azure AD B2C flow](./img/gsm-05-b2clogin.jpg "Azure AD B2C sign-up or sign-in flow")
+### Once you complete the sign-in, Google Smart Home will search for devices. If you used the sample code provided here, it will find `collaboration LED`. You can add this to a room in your home
 
-
- 6. Once you complete the sign-in, Google Smart Home will search for devices
- If you used the sample code provided here, it will find `collaboration LED`. You can add this to a room in your home
 ![Discover device](./img/gsm-06-smart-device.jpg "Discover device")
 
 
- 7. Finally, the discovered device will be displayed on your home page and you can controll it 
+### Finally, the discovered device will be displayed on your home page and you can controll it 
+
 ![Device on home page](./img/gsm-07-smart-device.jpg "Device on home page of Google Home")
